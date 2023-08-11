@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/src/landing.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./Second hand phones_files/output.css" rel="stylesheet">
+  <title> Second hand phones </title>
+</head>
+<body class="bg-slate-900">
+
+    <nav class="p-3 bg-slate-900 text-gray-400 font-bold relative ">
+
+        <span class=" h-10 inline"> Mobilemania </span>
+
+
+        <ul class="flex justify-end space-x-10 px-20 ">
+            <li class="cursor-pointer">home</li>
+            <li class="cursor-pointer">contact</li>
+            <li class="cursor-pointer">about</li>
+            <li class="cursor-pointer">Catalog</li>
+        </ul>
+    </nav>
+
+    <main>
+       <div class="h-80  bg-slate-500 flex ">
+
+          <div>
+            
+           <p class=" text-7xl p-5"> The Best Deal In The Town </p> 
+            
+            <p class="text-sm w-1/2 px-8"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione blanditiis sint non tempora asperiores quaerat similique quos beatae, dolores deserunt, labore, est minima voluptates iure fuga omnis quidem ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, odio.</p> 
+         
+        
+            <div class="buttons mx-60 my-5 space-x-5 ">
+                <button class="px-5 py-1 bg-black rounded-full  text-white  hover:bg-slate-500 hover:text-black hover:border-black hover:border-2">
+                    buy
+                </button>
+    
+                <button class="  px-5 py-1 bg-black rounded-full text-white  hover:bg-slate-500 hover:text-black hover:border-black hover:border-2  ">
+                    call
+                </button>
+             </div>        
+        </div>
+
+        <div class="flex justify-center w-1/2">
+            <img class="" src="./Second hand phones_files/calling.webp" alt="calling">
+           </div>
+       </div>
+
+      
+    </main>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
